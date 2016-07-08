@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="connection.url">jdbc:mariadb://localhost:3306/scutcmsdb</property>
+        <property name="connection.driver_class">org.mariadb.jdbc.Driver</property>
+        <property name="connection.username">loong</property>
+        <property name="connection.password">1028</property>
+        <property name="current_session_context_class">thread</property>
+        <property name="show_sql">true</property>
+        <property name="hbm2ddl.auto">update</property>
+        <!-- DB schema will be updated if needed -->
+        <!-- <property name="hbm2ddl.auto">update</property> -->
+        <property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+        <mapping resource="resources/User.hbm.xml" />
+        <mapping resource="resources/Salary.hbm.xml"/>
+        <mapping resource="resources/Employee.hbm.xml"/>
+        <mapping resource="resources/Procurement.hbm.xml"/>
+        <mapping resource="resources/Position.hbm.xml"/>
+    </session-factory>
+</hibernate-configuration>

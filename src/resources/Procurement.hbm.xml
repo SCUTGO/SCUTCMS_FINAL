@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding='UTF-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping package="com.scutcms.DAO.entity">
+    <class name="Procurement" table="PROCUREMENT">
+        <id name="productName" column="PRODUCT_NAME"></id>
+        <property name="unit_price" column="UNIT_PRICE"></property>
+        <property name="amount" column="AMOUT"></property>
+        <property name="procureDate" column="PROCURE_DATE"></property>
+        <property name="username" column="USERNAME"></property>
+    </class>
+</hibernate-mapping>

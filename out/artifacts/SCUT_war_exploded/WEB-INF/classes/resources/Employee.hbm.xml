@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding='UTF-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping package="com.scutcms.DAO.entity">
+    <class name="Employee" table="EMPLOYEE">
+        <id name="employeeId" column="EMPLOYEE_ID"></id>
+        <property name="name" column="EMPLOYEE_NAME"></property>
+        <property name="sex" column="EMPLOYEE_SEX"></property>
+        <property name="sfzh" column="EMPLOYEE_SFZH"></property>
+        <property name="age" column="EMPLOYEE_AGE"></property>
+        <property name="address" column="EMPLOYEE_ADDRESS"></property>
+        <property name="telephone" column="EMPLOYEE_TELPHONE"></property>
+        <property name="enter_time" column="ENTER_TIME"></property>
+        <property name="PositionName" column="POSITION_NAME"></property>
+    </class>
+</hibernate-mapping>

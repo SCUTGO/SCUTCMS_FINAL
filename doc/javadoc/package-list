@@ -1,0 +1,11 @@
+com.scutcms.DAO.access
+com.scutcms.DAO.entity
+com.scutcms.DAO.session
+com.scutcms.authentication.Enum
+com.scutcms.authentication.Service
+com.scutcms.personnel
+com.scutcms.purchased.Service
+com.scutcms.util
+com.scutcms.web.Filters
+com.scutcms.web.Servlets
+test

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding='UTF-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+<hibernate-mapping package="com.scutcms.DAO.entity">
+    <class name="User" table="USER">
+        <id name="username" column="USERNAME"></id>
+        <property name="password_md5" column="PASSWORD_MD5" />
+        <property name="salt" column="SALT" />
+        <property name="token" column="TOKEN" />
+        <property name="real_name" column="REAL_NAME" />
+        <property name="telephone" column="TELEPHONE"/>
+    </class>
+</hibernate-mapping>
